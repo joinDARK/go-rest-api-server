@@ -12,7 +12,7 @@ import (
 
 func TestServer_HandlerHello(t *testing.T) {
 	// Создаем новый сервер
-	srv := New(config.New())
+	srv := New(config.NewServerConfig())
 	srv.configureRouter() // Регистрируем маршруты
 	
 	// Создаем тестовый запрос и рекордер

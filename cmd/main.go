@@ -19,7 +19,7 @@ func init() {
 func main() {
 	flag.Parse()
 	
-	cfg := config.New()
+	cfg := config.NewServerConfig()
 	_, errCfg := toml.DecodeFile(configPath, cfg)
 	if errCfg != nil {
 		log.Fatal(errCfg)
